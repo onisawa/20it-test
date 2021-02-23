@@ -1,3 +1,6 @@
 export const INACTIVE_FONT_COLOR = '#94979B'
 export const DEFAULT_FONT_COLOR = '#E3E7E8'
 export const BACKGROUND_COLOR = '#303030'
+export const FIRST_GRADIENT_COLOR = '#A134EA'
+export const SECOND_GRADIENT_COLOR = '#5A94E8'
+export const THIRD_GRADIENT_COLOR = '#8C50E9'

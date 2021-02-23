@@ -3,16 +3,27 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import NavLink from '../elements/navLink'
+import GradientButton from '../elements/gradientButton'
 
 const Container = styled.main`
+    display: flex;
     position: absolute;
-    padding: 20px 80px;
+    width: 100%;
 `
 
 const LeftContainer = styled.div`
+    align-items: center;
     display: flex;
     flex: 0.6;
+    padding: 20px 60px;
+`
+
+const RightContainer = styled.div`
     align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 10px 60px;
 `
 
 const Header = ({ data }) => {
@@ -24,6 +35,9 @@ const Header = ({ data }) => {
                 <NavLink to='#'>Team</NavLink>
                 <NavLink to='#'>Blog</NavLink>
             </LeftContainer>
+            <RightContainer>
+                <GradientButton>CALL BACK</GradientButton>
+            </RightContainer>
         </Container>
     )
   }
