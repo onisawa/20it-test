@@ -11,7 +11,7 @@ const CustomLink = styled(Link)`
   }
 `
 
-const NavLink = ({to = '/', children = 'name'}) => {
+const NavLink = ({to = '#', children = 'name'}) => {
     return (
       <CustomLink to={to} activeClassName="active">{children}</CustomLink>
     )
