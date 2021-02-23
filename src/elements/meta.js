@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
-import favicon from '../images/favicon-32x32.png';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import favicon from '../images/favicon-32x32.png'
 
-const Meta = ({pageName}) => {
+const Meta = ({pageName = 'pageName'}) => {
     return (
       <Helmet>
         <title>{pageName} | 20it</title>
@@ -11,4 +11,4 @@ const Meta = ({pageName}) => {
     )
   }
 
-export default Meta;
+export default Meta

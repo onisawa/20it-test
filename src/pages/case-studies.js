@@ -1,6 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import Meta from '../elements/meta';
+import Header from '../components/header';
 
 // styles
 const pageStyles = {
@@ -30,6 +31,8 @@ const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
       <Meta pageName="Erfolgsgeschichten" />
+
+      <Header />
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>

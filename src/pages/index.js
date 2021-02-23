@@ -1,5 +1,6 @@
-import * as React from "react"
-import Meta from '../elements/meta';
+import React from 'react'
+import Header from '../components/header'
+import Meta from '../elements/meta'
 
 // styles
 const pageStyles = {
@@ -102,6 +103,8 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <Meta pageName="home" />
+
+      <Header />
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
