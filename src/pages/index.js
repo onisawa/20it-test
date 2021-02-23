@@ -1,4 +1,5 @@
 import * as React from "react"
+import Meta from '../elements/meta';
 
 // styles
 const pageStyles = {
@@ -100,6 +101,7 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <Meta pageName="home" />
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
@@ -147,4 +149,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default IndexPage;

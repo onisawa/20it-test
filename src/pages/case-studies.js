@@ -1,5 +1,6 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import Meta from '../elements/meta';
 
 // styles
 const pageStyles = {
@@ -28,6 +29,7 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
+      <Meta pageName="Erfolgsgeschichten" />
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
@@ -51,4 +53,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFoundPage;
