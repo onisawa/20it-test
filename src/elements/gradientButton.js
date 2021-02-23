@@ -8,9 +8,13 @@ const CustomButton = styled.a`
   color: ${DEFAULT_FONT_COLOR};
   font-size: 16px;
   font-weight: 600;
-  padding: 10px 30px;
+  padding: 15px 30px;
   text-align: center;
   width: ${({width}) => width};
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 const GradientButton = ({width = 'auto', children = 'name'}) => {

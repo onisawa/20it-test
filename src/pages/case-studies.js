@@ -23,13 +23,13 @@ export default CaseStudies;
 
 export const query = graphql`
 query {
-  file(relativePath: { eq: "20it-logo.png" }) {
+  logo: file(relativePath: { eq: "20it-logo.png" }) {
     childImageSharp {
       fixed(width: 100, height: 40) {
         ...GatsbyImageSharpFixed
       }
     }
-  }
+  },
 }
 `
 

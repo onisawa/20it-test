@@ -9,6 +9,7 @@ const Container = styled.main`
     display: flex;
     position: absolute;
     width: 100%;
+    z-index: 5;
 `
 
 const LeftContainer = styled.div`
@@ -30,7 +31,7 @@ const Header = ({ data }) => {
     return (
         <Container>
             <LeftContainer>
-                <NavLink to='/'><Img fixed={data.file.childImageSharp.fixed} /></NavLink>
+                <NavLink to='/'><Img fixed={data.logo.childImageSharp.fixed} /></NavLink>
                 <NavLink to='/case-studies'>Erfolgsgeschichten</NavLink>
                 <NavLink to='#'>Team</NavLink>
                 <NavLink to='#'>Blog</NavLink>
