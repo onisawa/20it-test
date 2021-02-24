@@ -3,11 +3,16 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import TitleAndDescription from './titleAndDescription'
+import { lg } from '../constant'
 
 const Container = styled.div`
   display: flex;
   flex: 1;
   flex-direction: ${({reverse}) => reverse ? `row-reverse` : 1};
+
+  @media (max-width: ${lg}) { 
+    flex-direction: column;
+    }
 `
 
 const ContentContainer = styled.div`
