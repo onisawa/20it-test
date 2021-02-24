@@ -50,6 +50,7 @@ const IconContainer = styled.div`
 
 const Icon = styled(Img)`
   margin-right: 30px;
+  margin-bottom: 30px;
 `
 
 const ImageContainer = styled.div`
@@ -78,7 +79,7 @@ const HomeFirstSection = ({ data }) => {
             </IconContainer>
         </ContentContainer>
           <ImageContainer>
-            <Img style={{ height: "700px" }} fluid={data.firstPicture.childImageSharp.fluid} />
+            <Img style={{ height: "100%" }} fluid={data.firstPicture.childImageSharp.fluid} />
           </ImageContainer>
         </Container>
     )
