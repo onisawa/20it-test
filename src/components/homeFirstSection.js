@@ -58,7 +58,16 @@ const ImageContainer = styled.div`
   position: relative;
 `
 
+
+
 const HomeFirstSection = ({ data }) => {
+  const icon = [
+    {fixed: data.arbotena.childImageSharp.fixed},
+    {fixed: data.foodplace.childImageSharp.fixed},
+    {fixed: data.procuratio.childImageSharp.fixed},
+    {fixed: data.whitechart.childImageSharp.fixed},
+
+  ]
     return (
         <Container>
         <ContentContainer>
@@ -67,11 +76,7 @@ const HomeFirstSection = ({ data }) => {
             <GradientButton width="225px">CALL BACK</GradientButton>
             <Subtitle>uns vertrauen</Subtitle>
             <IconContainer>
-                <Icon fixed={data.arbotena.childImageSharp.fixed} />
-                <Icon fixed={data.foodplace.childImageSharp.fixed} />
-                <Icon fixed={data.procuratio.childImageSharp.fixed} />
-                <Icon fixed={data.whitechart.childImageSharp.fixed} />
-
+                {icon.map(({fixed})=> (<Icon fixed={fixed} />))}
             </IconContainer>
         </ContentContainer>
           <ImageContainer>

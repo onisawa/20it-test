@@ -69,6 +69,20 @@ query {
         ...GatsbyImageSharpFixed
       }
     }
+  },
+  document: file(relativePath: { eq: "Picture (3).png" }) {
+    childImageSharp {
+      fixed(width: 110, height: 24) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  },
+  screen: file(relativePath: { eq: "Picture - New Way.png" }) {
+    childImageSharp {
+      fixed(width: 110, height: 24) {
+        ...GatsbyImageSharpFixed
+      }
+    }
   }
 }
 `

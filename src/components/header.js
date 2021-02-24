@@ -27,14 +27,19 @@ const RightContainer = styled.div`
     padding: 10px 60px;
 `
 
+const menu = [
+    {name: 'Erfolgsgeschichten', to: '/case-studies'},
+    {name: 'Team', to: '#'},
+    {name: 'Blog', to: '#'},
+
+]
+
 const Header = ({ data }) => {
     return (
         <Container>
             <LeftContainer>
                 <NavLink to='/'><Img fixed={data.logo.childImageSharp.fixed} /></NavLink>
-                <NavLink to='/case-studies'>Erfolgsgeschichten</NavLink>
-                <NavLink to='#'>Team</NavLink>
-                <NavLink to='#'>Blog</NavLink>
+                {menu.map(({name, to}) => (<NavLink to={to}>{name}</NavLink>))}
             </LeftContainer>
             <RightContainer>
                 <GradientButton>CALL BACK</GradientButton>
