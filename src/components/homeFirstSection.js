@@ -52,11 +52,8 @@ const Icon = styled(Img)`
 `
 
 const ImageContainer = styled.div`
-  display: flex;
-  flex: 0.4;
-  justify-content: flex-end;
-  position: relative;
-`
+  width: 100%;
+  `
 
 
 
@@ -80,7 +77,7 @@ const HomeFirstSection = ({ data }) => {
             </IconContainer>
         </ContentContainer>
           <ImageContainer>
-            <Img fixed={data.firstPicture.childImageSharp.fixed} />
+            <Img style={{ height: "700px" }} fluid={data.firstPicture.childImageSharp.fluid} />
           </ImageContainer>
         </Container>
     )

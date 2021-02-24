@@ -39,8 +39,8 @@ query {
   },
   firstPicture: file(relativePath: { eq: "Picture (2).png" }) {
     childImageSharp {
-      fixed(width: 700, height: 700) {
-        ...GatsbyImageSharpFixed
+      fluid {
+        ...GatsbyImageSharpFluid
       }
     }
   },
