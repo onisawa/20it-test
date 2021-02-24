@@ -53,7 +53,7 @@ const Icon = styled(Img)`
 
 const ImageContainer = styled.div`
   display: flex;
-  flex: 1;
+  flex: 0.4;
   justify-content: flex-end;
   position: relative;
 `

@@ -4,6 +4,8 @@ import Img from 'gatsby-image'
 
 import NavLink from '../elements/navLink'
 import GradientButton from '../elements/gradientButton'
+import { Link } from 'gatsby'
+import { lg } from '../constant'
 
 const Container = styled.main`
     display: flex;
@@ -19,12 +21,24 @@ const LeftContainer = styled.div`
     padding: 20px 60px;
 `
 
+const MenuContainer = styled.div`
+    @media (max-width: ${lg}) { 
+        display: none;
+    }
+`
+
 const RightContainer = styled.div`
     align-items: center;
     display: flex;
     flex: 1;
     justify-content: flex-end;
     padding: 10px 60px;
+`
+
+const ButtonContainer = styled.div`
+    @media (max-width: ${lg}) { 
+        display: none;
+    }
 `
 
 const menu = [
@@ -38,11 +52,15 @@ const Header = ({ data }) => {
     return (
         <Container>
             <LeftContainer>
-                <NavLink to='/'><Img fixed={data.logo.childImageSharp.fixed} /></NavLink>
-                {menu.map(({name, to}) => (<NavLink key={name} to={to}>{name}</NavLink>))}
+                <Link to='/'><Img fixed={data.logo.childImageSharp.fixed} /></Link>
+                <MenuContainer>
+                    {menu.map(({name, to}) => (<NavLink key={name} to={to}>{name}</NavLink>))}
+                </MenuContainer>
             </LeftContainer>
             <RightContainer>
+            <ButtonContainer>
                 <GradientButton>CALL BACK</GradientButton>
+            </ButtonContainer>
             </RightContainer>
         </Container>
     )
