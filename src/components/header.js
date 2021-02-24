@@ -39,7 +39,7 @@ const Header = ({ data }) => {
         <Container>
             <LeftContainer>
                 <NavLink to='/'><Img fixed={data.logo.childImageSharp.fixed} /></NavLink>
-                {menu.map(({name, to}) => (<NavLink to={to}>{name}</NavLink>))}
+                {menu.map(({name, to}) => (<NavLink key={name} to={to}>{name}</NavLink>))}
             </LeftContainer>
             <RightContainer>
                 <GradientButton>CALL BACK</GradientButton>

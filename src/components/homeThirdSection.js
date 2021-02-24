@@ -46,6 +46,7 @@ const HomeThirdSection = ({ data }) => {
         <Container>
           {info.map(({title, description, fixed, reverse}) => (
             <ImageAndInfo 
+              key={title}
               title={title}
               description={description}
               fixed={fixed}

@@ -62,10 +62,10 @@ const ImageContainer = styled.div`
 
 const HomeFirstSection = ({ data }) => {
   const icon = [
-    {fixed: data.arbotena.childImageSharp.fixed},
-    {fixed: data.foodplace.childImageSharp.fixed},
-    {fixed: data.procuratio.childImageSharp.fixed},
-    {fixed: data.whitechart.childImageSharp.fixed},
+    {key: 'arbotena', fixed: data.arbotena.childImageSharp.fixed},
+    {key: 'foodplace',fixed: data.foodplace.childImageSharp.fixed},
+    {key: 'procuratio',fixed: data.procuratio.childImageSharp.fixed},
+    {key: 'whitechart',fixed: data.whitechart.childImageSharp.fixed},
 
   ]
     return (
@@ -76,7 +76,7 @@ const HomeFirstSection = ({ data }) => {
             <GradientButton width="225px">CALL BACK</GradientButton>
             <Subtitle>uns vertrauen</Subtitle>
             <IconContainer>
-                {icon.map(({fixed})=> (<Icon fixed={fixed} />))}
+                {icon.map(({fixed, key})=> (<Icon key={key} fixed={fixed} />))}
             </IconContainer>
         </ContentContainer>
           <ImageContainer>

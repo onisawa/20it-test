@@ -27,7 +27,8 @@ const HomeSecondSection = ({ data }) => {
     return (
         <Container>
           {info.map(({title, description, fixed}) => (
-            <ImageAndInfo 
+            <ImageAndInfo
+              key={title}
               title={title}
               description={description}
               fixed={fixed}
