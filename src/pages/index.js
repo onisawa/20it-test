@@ -72,14 +72,14 @@ query {
   },
   document: file(relativePath: { eq: "Picture (3).png" }) {
     childImageSharp {
-      fixed(width: 110, height: 24) {
+      fixed(width: 400, height: 250) {
         ...GatsbyImageSharpFixed
       }
     }
   },
   screen: file(relativePath: { eq: "Picture - New Way.png" }) {
     childImageSharp {
-      fixed(width: 110, height: 24) {
+      fixed(width: 550, height: 400) {
         ...GatsbyImageSharpFixed
       }
     }

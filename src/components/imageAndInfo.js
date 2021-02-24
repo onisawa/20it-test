@@ -16,12 +16,11 @@ const ContentContainer = styled.div`
   justify-content: center;
 `
 
-const ImageAndInfo = ({ data, title = 'title', description = 'description' }) => {
+const ImageAndInfo = ({ fixed, title = 'title', description = 'description' }) => {
     return (
         <Container>
           <ContentContainer>
-            <p>Img</p>
-            {/* <Img fixed={data.firstPicture.childImageSharp.fixed} /> */}
+            <Img fixed={fixed} />
           </ContentContainer>
           <ContentContainer>
               <TitleAndDescription 

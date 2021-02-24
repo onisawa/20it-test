@@ -5,9 +5,10 @@ import { DEFAULT_FONT_COLOR, FIRST_GRADIENT_COLOR, SECOND_GRADIENT_COLOR } from 
 const Container = styled.div`
   align-items: flex-start;
   display: flex;
-  flex: 1;
+  flex: 0.6;
   flex-direction: column;
   justify-content: center;
+  margin: 100px 0;
 `
 
 const Header = styled.p`
