@@ -7,6 +7,7 @@ import Meta from '../elements/meta'
 import PageStyles from '../elements/pageStyle'
 import HomeFirstSection from '../components/homeFirstSection'
 import HomeSecondSection from '../components/homeSecondSection'
+import HomeThirdSection from '../components/homeThirdSection'
 
 const IndexPage = ({data}) => {
   return (
@@ -19,6 +20,7 @@ const IndexPage = ({data}) => {
         
         <HomeFirstSection data={data} />
         <HomeSecondSection data={data} />
+        <HomeThirdSection data={data} />
       </PageStyles>
     </>
   )

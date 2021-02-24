@@ -7,6 +7,7 @@ import TitleAndDescription from './titleAndDescription'
 const Container = styled.div`
   display: flex;
   flex: 1;
+  flex-direction: ${({reverse}) => reverse ? `row-reverse` : 1};
 `
 
 const ContentContainer = styled.div`
@@ -16,9 +17,9 @@ const ContentContainer = styled.div`
   justify-content: center;
 `
 
-const ImageAndInfo = ({ fixed, title = 'title', description = 'description' }) => {
+const ImageAndInfo = ({ fixed, title = 'title', description = 'description', reverse = false }) => {
     return (
-        <Container>
+        <Container reverse={reverse}>
           <ContentContainer>
             <Img fixed={fixed} />
           </ContentContainer>
