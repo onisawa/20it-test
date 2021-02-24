@@ -85,6 +85,42 @@ query {
         ...GatsbyImageSharpFixed
       }
     }
-  }
+  },
+  threeDOne: file(relativePath: { eq: "3D- 1.png" }) {
+    childImageSharp {
+      fixed(width: 400, height: 375) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  },
+  threeDTwo: file(relativePath: { eq: "3D- 2.png" }) {
+    childImageSharp {
+      fixed(width: 400, height: 550) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  },
+  threeDThree: file(relativePath: { eq: "3D- 3.png" }) {
+    childImageSharp {
+      fixed(width: 400, height: 375) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  },
+  threeDFour: file(relativePath: { eq: "3D- 4.png" }) {
+    childImageSharp {
+      fixed(width: 400, height: 375) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  },
+  threeDFive: file(relativePath: { eq: "3D- 5.png" }) {
+    childImageSharp {
+      fixed(width: 400, height: 375) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  },
+  
 }
 `
