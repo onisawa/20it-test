@@ -5,7 +5,7 @@ import { DEFAULT_FONT_COLOR, FIRST_GRADIENT_COLOR, SECOND_GRADIENT_COLOR } from 
 const Container = styled.div`
   align-items: flex-start;
   display: flex;
-  flex: 0.6;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
 `
