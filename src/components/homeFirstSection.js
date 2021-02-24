@@ -13,7 +13,7 @@ const Container = styled.div`
 const ContentContainer = styled.div`
   align-items: flex-start;
   display: flex;
-  flex: 0.6;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   padding: 20px 90px;
@@ -44,6 +44,7 @@ const Subtitle = styled.p`
 
 const IconContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 `
 
@@ -52,7 +53,7 @@ const Icon = styled(Img)`
 `
 
 const ImageContainer = styled.div`
-  width: 100%;
+  width: 40%;
   `
 
 
@@ -70,7 +71,7 @@ const HomeFirstSection = ({ data }) => {
         <ContentContainer>
             <Header>Beyond IT</Header>
             <Description>Wir möchten euch bei euren digitalen Herausforderungen unterstützen. Als Techniker, als Berater und auch als Mentor.</Description>
-            <GradientButton width="225px">CALL BACK</GradientButton>
+            <GradientButton width="50%">CALL BACK</GradientButton>
             <Subtitle>uns vertrauen</Subtitle>
             <IconContainer>
                 {icon.map(({fixed, key})=> (<Icon key={key} fixed={fixed} />))}
