@@ -18,7 +18,7 @@ const LeftContainer = styled.div`
     align-items: center;
     display: flex;
     flex: 0.6;
-    padding: 20px 60px;
+    padding: 20px 90px;
 `
 
 const MenuContainer = styled.div`
@@ -32,7 +32,7 @@ const RightContainer = styled.div`
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    padding: 10px 60px;
+    padding: 10px 90px;
 `
 
 const ButtonContainer = styled.div`
